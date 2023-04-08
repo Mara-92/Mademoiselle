@@ -1,0 +1,84 @@
+header{
+    .navbar{
+        padding: 27px 0!important;
+        .navbar-brand{
+            max-width: 196px;
+            img{
+                display: block;
+            }
+        }
+        .navbar-toggler{
+            box-shadow: none;
+            outline: none;
+        }
+        .navbar-nav{
+            border-bottom: 1px solid $primary;
+            @media(min-width:992px){
+                border-bottom: none;
+            }
+            .nav-item{
+                &:not(:last-of-type){
+                    border-bottom: 1px solid $primary;
+                    @media(min-width:992px){
+                        border-bottom: none;
+                        margin-right: 7.2rem;
+                    }
+
+                }
+                @media(min-width:992px){
+                    position: relative;
+                    &:hover{
+                        .submenu{
+                            opacity: 1;
+                            transform: rotateX(0) perspective(1000px);
+                        }
+
+                    }
+                }
+                .nav-link{
+                    line-height: 1.7rem;
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    padding: 10px;
+                    position: relative;
+                    .toggle-submenu{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        @media(min-width:992px){
+                            display: none;
+                        }
+                    }
+                }
+                .submenu{
+                    .nav-link{
+                        text-transform: capitalize!important;
+                        @media(min-width:992px){
+                            white-space: nowrap;
+                        }
+                    }
+                    padding-left: 20px;
+                    display: none;
+                    transition: 0.5s linear;
+                    @media(min-width:992px){
+                        display: block!important;
+                        transform: rotateX(-90deg);
+                        transform-origin: 0 0;
+                        opacity: 0;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        padding-left: 0;
+                    }
+
+                }
+            }
+        }
+    }
+}
