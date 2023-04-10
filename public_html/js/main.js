@@ -22,13 +22,17 @@ $(document).ready(function () {
         animation();
     });
 // animation end
-$('.navbar-nav').on('click', '.toggle-submenu', function (e){
+var headerNav = false;
+if(headerNav === false){
+    $('.toggle-submenu').css('display','none');
+    $('.submenu').css('opacity', '0');
+}else{
+    $('.navbar-nav').on('click', '.toggle-submenu', function (e){
     e.preventDefault();
     $(this).toggleClass('fa-plus fa-minus');
     $(this).parent().next('.submenu').slideToggle();
 });
-
-
+}
 /*
     if ($('.contact-form').length > 0) {
         $(function () {

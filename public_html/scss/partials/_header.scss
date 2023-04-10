@@ -17,6 +17,22 @@ header{
                 border-bottom: none;
             }
             .nav-item{
+                .active{
+                    color: $secondary;
+                    @media(min-width:992px){
+                        color: $body-color;
+                    }
+                    &:after{
+                        @media(min-width:992px){
+                            content: '';
+                            display: block;
+                            height: 1px;
+                            background-color: $secondary;
+                            width: 100%;
+                            margin-top: 5px;
+                        }
+                    }
+                }
                 &:not(:last-of-type){
                     border-bottom: 1px solid $primary;
                     @media(min-width:992px){
@@ -67,7 +83,7 @@ header{
                     display: none;
                     transition: 0.5s linear;
                     @media(min-width:992px){
-                        display: block!important;
+                        display: block;
                         transform: rotateX(-90deg);
                         transform-origin: 0 0;
                         opacity: 0;
