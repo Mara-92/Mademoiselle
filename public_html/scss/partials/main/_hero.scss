@@ -2,9 +2,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     padding: 170px 0 220px;
+    margin-bottom: 4rem;
     @media(min-width:768px){
         padding: 218px 0 269px;
+        margin-bottom: 7.5rem;
     }
     h2{
         font-family: 'Bodoni';
@@ -12,7 +15,7 @@
         line-height: 6rem;
         letter-spacing: 1rem;
         max-width: 704px;
-        margin-inline: auto;
+        margin: 0 auto;
         @media(min-width:992px){
             font-size: 6rem;
             line-height: 8.4rem;

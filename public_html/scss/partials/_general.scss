@@ -5,3 +5,22 @@ body{
     font-family: $lato;
     font-weight: 400;
 }
+.section-title{
+    font-family: 'Bodoni';
+    font-size: 3rem;
+    line-height: 4.5rem;
+    letter-spacing: 5px;
+    color: $body-color;
+}
+.section-title:after{
+    content: '';
+    display: block;
+    background-color: $secondary;
+    height: 1px;
+    width: 74px;
+    margin-top: 11px;
+}
+.ratio{
+    background-color: #ccc;
+    overflow: hidden;
+}

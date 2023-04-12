@@ -1,0 +1,28 @@
+.latest-news{
+    .news-item{
+        .latest-news-wrapper{
+            position: relative;
+            z-index: 22;
+            margin-top: -88px;
+            width: 88%;
+            background-color: #FFFFFF;
+            padding: 22px 18px 57px 19px;
+            margin-inline:auto;
+            p{
+                font-family: 'Bodoni';
+                font-size: 1.6rem;
+                font-style: italic;
+                line-height: 2rem;
+                letter-spacing: 1px;
+                color: $body-color;
+            }
+            a{
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                letter-spacing: normal;
+                color: $body-color;
+                display: block;
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@ $(document).ready(function () {
         animation();
     });
 // animation end
-var headerNav = false;
+var headerNav = true;
 if(headerNav === false){
     $('.toggle-submenu').css('display','none');
     $('.submenu').css('opacity', '0');

@@ -74,6 +74,7 @@ header{
                 }
                 .submenu{
                     .nav-link{
+                        color: $primary;
                         text-transform: capitalize!important;
                         @media(min-width:992px){
                             white-space: nowrap;
