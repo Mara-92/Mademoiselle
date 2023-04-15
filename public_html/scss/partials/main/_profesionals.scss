@@ -1,0 +1,31 @@
+
+.profesionals{
+    padding: 7rem 0;
+    @media(min-width:768px){
+        padding: 11.1 rem 0 6.7rem;
+    }
+    .profesionals-slider{
+        .profesionals-item{
+            border: 1px solid $secondary;
+            @media(min-width:768px){
+                padding: 5.4rem 0!important;
+            }
+            .profesionals-wrapper{
+                max-width: 368px;
+                h3{
+                    font-size: 3rem;
+                    line-height: 2.7rem;
+                    color: $body-color;
+                }
+                .profesionals-description{
+                    font-family: $lato;
+                    font-weight: 300;
+                    font-size: 1.6rem;
+                    line-height: 2.3rem;
+                    color: $body-color;
+                }
+            }
+        }
+    }
+
+}

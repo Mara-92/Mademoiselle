@@ -1,6 +1,6 @@
 header{
     .navbar{
-        padding: 27px 0!important;
+        padding: 20px 0!important;
         .navbar-brand{
             max-width: 196px;
             img{
@@ -56,7 +56,6 @@ header{
                     font-size: 1.4rem;
                     text-transform: uppercase;
                     letter-spacing: 1px;
-                    padding: 10px;
                     position: relative;
                     .toggle-submenu{
                         position: absolute;
@@ -74,7 +73,10 @@ header{
                 }
                 .submenu{
                     .nav-link{
-                        color: $primary;
+                        &:hover{
+                            color: $primary;
+                        }
+                        color: $body-color;
                         text-transform: capitalize!important;
                         @media(min-width:992px){
                             white-space: nowrap;

@@ -1,10 +1,6 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
 <html lang="en">
-    <head>
+    <head class="">
         <title>Mademoiselle</title>
         <meta charset="UTF-8">
         <meta name="author" content="Marina Miljkovic">
@@ -27,12 +23,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <link rel="icon" type="image/png" href="./android-icon-192x192.png">
 
 
-
+        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css"/>
         <link href="css/theme.css" rel="stylesheet" type="text/css"/>
         <link href="css/developer.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="scss/partials/main/_hero-section.scss" type="text/css">
+
     </head>
     <body>
-        <header>
+        <header class="fixed-top">
             <nav class="navbar navbar-expand-lg bg-white py-2">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
@@ -76,7 +75,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         </header>
         <main>
             <!-- section hero start -->
-            <section class="hero" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 100%), url('./img/hero/homepage.png.png')">
+            <section class="hero-section" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.45) 0%,rgba(0,0,0,0) 100%), url('./img/background/background01.png')">
                 <div class="container">
                     <h2 class="text-center text-white">
                         Welcome to Mademoiselle
@@ -88,14 +87,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <!-- section latest news start -->
             <section class="latest-news">
                 <div class="container">
-                    <h3 class="text-uppercase section-title mb-6 mb-md-10">
+                    <h3 class="section-title mb-6 mb-md-10">
                         Stay up with the latest beauty trends
                     </h3>
                     <div class="row justify-content-lg-between">
                         <div class="col-12 col-lg-4">
                             <article class="news-item h-100">
-                                <a href="#" class="d-block ratio ratio-4x3">
-                                    <img src="./img/hero/news/news01.png" alt="news01"/>
+                                <a href="#" class="d-block ratio ratio-4x3 news-item-image">
+                                    <img src="./img/news/news01.png" alt="news01"/>
                                 </a>
                                 <div class="latest-news-wrapper">
                                     <p class="text-center mb-4">07/13/2019</p>
@@ -108,31 +107,31 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                                 </div>
                             </article>
                         </div>
-                         <div class="col-12 col-lg-4">
+                        <div class="col-12 col-lg-4">
                             <article class="news-item h-100">
-                                <a href="#" class="d-block ratio ratio-4x3">
-                                    <img src="./img/hero/news/news02.png" alt="news02"/>
+                                <a href="#" class="d-block ratio ratio-4x3 news-item-image">
+                                    <img src="./img/news/news02.png" alt="news02"/>
                                 </a>
                                 <div class="latest-news-wrapper">
                                     <p class="text-center">05/15/2019</p>
                                     <h2 class="text-center">
                                         <a href="#" class="text-uppercase">
-                                           Aiming For Higher The Mastopexy
+                                            Aiming For Higher The Mastopexy
                                         </a>
                                     </h2>
                                 </div>
                             </article>
                         </div>
-                         <div class="col-12 col-lg-4">
+                        <div class="col-12 col-lg-4">
                             <article class="news-item h-100">
-                                <a href="#" class="d-block ratio ratio-4x3">
-                                    <img src="./img/hero/news/news03.png" alt="news03"/>
+                                <a href="#" class="d-block ratio ratio-4x3 news-item-image">
+                                    <img src="./img/news/news03.png" alt="news03"/>
                                 </a>
                                 <div class="latest-news-wrapper">
                                     <p class="text-center">02/15/2019</p>
                                     <h2 class="text-center">
                                         <a href="#" class="text-uppercase">
-                                          Seven Steps For Keeping Teeth Healthy For A Lifetime
+                                            Seven Steps For Keeping Teeth Healthy For A Lifetime
                                         </a>
                                     </h2>
                                 </div>
@@ -142,13 +141,198 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 </div>
             </section>
             <!-- section latest news end -->
+
+
+            <!-- section service start -->
+            <section class="service-section">
+                <div class="container">
+                    <h3 class="section-title mb-6 mb-md-10">
+                        Our Services
+                    </h3>  
+                    <article class="service-item mb-4 mb-md-0">
+                        <div class="row">
+                            <div class="col-12 col-md-6 service-item-data px-md-0">
+                                <a href="#" class="d-block h-100">
+                                    <img src="./img/service/service01.png" alt="service01"/>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 service-item-data m-md-auto px-md-0">
+                                <div class="service-wrapper h-100">
+                                    <h4 class="service-wrapper-title mb-4 mb-lg-7">
+                                        <a href="#" class="d-block">
+                                            Lip augmentation Lip filling with hyaluronum
+                                        </a>
+                                    </h4>
+                                    <a href="#" class="btn service-btn">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="service-item mb-4 mb-md-0">
+                        <div class="row">
+                            <div class="col-12 col-md-6 service-item-data px-md-0">
+                                <a href="#" class="d-block h-100">
+                                    <img src="./img/service/service02.png" alt="service02"/>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 service-item-data m-md-auto px-md-0">
+                                <div class="service-wrapper h-100">
+                                    <h4 class="service-wrapper-title mb-4 mb-lg-7">
+                                        <a href="#" class="d-block">
+                                            male and female haircut
+                                        </a>
+                                    </h4>
+                                    <a href="#" class="btn service-btn">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="service-item mb-4 mb-md-0">
+                        <div class="row">
+                            <div class="col-12 col-md-6 service-item-data px-md-0">
+                                <a href="#" class="d-block h-100">
+                                    <img src="./img/service/service03.png" alt="service03"/>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 service-item-data m-md-auto px-md-0">
+                                <div class="service-wrapper h-100">
+                                    <h4 class="service-wrapper-title mb-4 mb-lg-7">
+                                        <a href="#" class="d-block">
+                                            Day and night makeup
+                                        </a>
+                                    </h4>
+                                    <a href="#" class="btn service-btn">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="service-item mb-4 mb-md-0">
+                        <div class="row">
+                            <div class="col-12 col-md-6 service-item-data px-md-0">
+                                <a href="#" class="d-block h-100">
+                                    <img src="./img/service/service04.png" alt="service04"/>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6 service-item-data m-md-auto px-md-0">
+                                <div class="service-wrapper h-100">
+                                    <h4 class="service-wrapper-title mb-4 mb-lg-7">
+                                        <a href="#" class="d-block">
+                                            Waxing with cold and warm wax
+                                        </a>
+                                    </h4>
+                                    <a href="#" class="btn service-btn">learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>   
+            <!-- section service end -->
+
+            <!-- section profesional start -->
+            <section class="profesionals"> 
+                <div class="container">
+                    <h3 class="section-title mb-6 mb-md-10">
+                        Trust our professionals
+                    </h3>
+                    <div class="profesionals-slider py-7 owl-carousel owl-theme">
+                        <article class="profesionals-item">  
+                            <div class="row justify-content-lg-around align-items-md-center">
+                                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-0">
+                                    <figure class="h-100 profesionals-image ratio ratio-1x1 m-0">
+                                        <img src="./img/profesionals/profesionals01.png" alt="profesionals01"/>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-5">
+                                    <div class="h-100 profesionals-wrapper">
+                                        <h3 class="text-uppercase mb-4 mb-md-7">Vera Valdez</h3>
+                                        <p class="profesionals-description">
+                                            Lorem Ipsum is simply dummy text of the printing 
+                                            and typesetting industry. Lorem Ipsum has been 
+                                            the industry's standard dummy text ever since
+                                            the 1500s, when an unknown printer took a 
+                                            galley of type and scrambled it to make a 
+                                            type specimen book. It has survived not only 
+                                            five centuries, but also the leap into electronic 
+                                            typesetting, remaining essentially unchanged.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="profesionals-item">  
+                            <div class="row justify-content-lg-around align-items-md-center">
+                                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-0">
+                                    <figure class="h-100 profesionals-image ratio ratio-1x1 m-0">
+                                        <img src="./img/profesionals/profesionals01.png" alt="profesionals01"/>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-5">
+                                    <div class="h-100 profesionals-wrapper">
+                                        <h3 class="text-uppercase mb-4 mb-md-7">Vera Valdez</h3>
+                                        <p class="profesionals-description">
+                                            Lorem Ipsum is simply dummy text of the printing 
+                                            and typesetting industry. Lorem Ipsum has been 
+                                            the industry's standard dummy text ever since
+                                            the 1500s, when an unknown printer took a 
+                                            galley of type and scrambled it to make a 
+                                            type specimen book. It has survived not only 
+                                            five centuries, but also the leap into electronic 
+                                            typesetting, remaining essentially unchanged.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="profesionals-item">  
+                            <div class="row justify-content-lg-around align-items-md-center">
+                                <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-0">
+                                    <figure class="h-100 profesionals-image ratio ratio-1x1 m-0">
+                                        <img src="./img/profesionals/profesionals01.png" alt="profesionals01"/>
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-5">
+                                    <div class="h-100 profesionals-wrapper">
+                                        <h3 class="text-uppercase mb-4 mb-md-7">Vera Valdez</h3>
+                                        <p class="profesionals-description">
+                                            Lorem Ipsum is simply dummy text of the printing 
+                                            and typesetting industry. Lorem Ipsum has been 
+                                            the industry's standard dummy text ever since
+                                            the 1500s, when an unknown printer took a 
+                                            galley of type and scrambled it to make a 
+                                            type specimen book. It has survived not only 
+                                            five centuries, but also the leap into electronic 
+                                            typesetting, remaining essentially unchanged.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- section profesional end -->
         </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-social text-center mb-4">
+                    <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+                    <a href="https://instagram" target="_blank" class="fab fa-instagram"></a>
+                </div>
+                <p class="text-center">
+                    Copyright 	&copy; 2019 <a href="index.html">Mademoiselle</a>
+                </p>
+            </div>
+        </footer>
 
 
         <script src="js/jquery.min.js" type="text/javascript"></script>
 
         <script src="https://kit.fontawesome.com/ee3c29708f.js" crossorigin="anonymous"></script>
         <script src="./js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <script src="js/owl.carousel.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>

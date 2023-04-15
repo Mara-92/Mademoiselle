@@ -1,6 +1,9 @@
 img{
     max-width: 100%;
 }
+a{
+    padding: 0;
+}
 body{
     font-family: $lato;
     font-weight: 400;
@@ -11,6 +14,7 @@ body{
     line-height: 4.5rem;
     letter-spacing: 5px;
     color: $body-color;
+    text-transform: uppercase;
 }
 .section-title:after{
     content: '';
@@ -23,4 +27,5 @@ body{
 .ratio{
     background-color: #ccc;
     overflow: hidden;
+    display: block;
 }

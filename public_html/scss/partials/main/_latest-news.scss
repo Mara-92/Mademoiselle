@@ -1,5 +1,13 @@
 .latest-news{
     .news-item{
+        .news-item-image{
+            transition: 0.3s linear;
+        }
+        &:hover{
+            .news-item-image{
+                opacity: 0.8;
+            }
+        }
         .latest-news-wrapper{
             position: relative;
             z-index: 22;
@@ -16,12 +24,20 @@
                 letter-spacing: 1px;
                 color: $body-color;
             }
-            a{
-                font-size: 1.6rem;
-                line-height: 2.4rem;
-                letter-spacing: normal;
-                color: $body-color;
-                display: block;
+            h2{
+                &:hover{
+                    a{
+                        color: $primary;
+                    }
+                }
+                a{
+                    transition: 0.5s linear;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    letter-spacing: normal;
+                    color: $body-color;
+                    display: block;
+                }
             }
         }
     }
