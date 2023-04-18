@@ -1,0 +1,54 @@
+.contact-form-section{
+    padding: 6.5rem 0;
+    @media(min-width:992px){
+        padding: 10rem 0 11rem;
+    }
+    .contact-form{
+        .section-title{
+            margin-bottom: 2.3rem;
+            &:after{
+                display: none;
+            }
+        }
+        .form-group{
+            .form-control{
+                padding: 12px 0 12px 19px;
+                border: none;
+                background-color: rgba(37, 61, 97,0.02);
+                font-weight: 300;
+                font-size: 1.6rem!important;
+                line-height: 2.5rem!important;
+                letter-spacing: -0.23px;
+                color: $body-color;
+
+            }
+            button{
+                border: 1px solid $body-color;
+                padding: 10px 30px 12px;
+                border-radius: 0;
+                background-color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                color: $body-color;
+            }
+        }
+    }
+    .contact-map{
+        width: 100%;
+        &:hover{
+                .contact-map-overlay{
+                    position: unset;
+                }
+            }
+        @media(min-width:768px){
+            width: 130%;
+        }
+  
+        .contact-map-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(236,217,217,0.45);
+        }
+    }
+}

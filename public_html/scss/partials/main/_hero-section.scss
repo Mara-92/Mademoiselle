@@ -8,6 +8,9 @@
         padding: 218px 0 269px;
         margin-bottom: 7.5rem;
     }
+    @media(min-width:1200px){
+        background-size: contain;
+    }
     h2{
         font-family: 'Bodoni';
         font-size: 4rem;

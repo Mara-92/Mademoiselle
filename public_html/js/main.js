@@ -38,64 +38,50 @@ $(document).ready(function () {
             items: 1,
             dots: false,
             nav: true,
-            responsive:{
-                768:{
+            responsive: {
+                768: {
                     dots: true,
                     nav: false
                 }
             }
-            
+
         });
     }
-    /*
-     if ($('.contact-form').length > 0) {
-     $(function () {
-     $(".contact-form").validate({
-     highlight: function (element) {
-     $(element).addClass("is-invalid").removeClass("is-valid");
-     $(element).closest('.form-group').addClass("is-invalid").removeClass("is-valid");
-     },
-     unhighlight: function (element) {
-     $(element).removeClass('is-invalid').addClass('is-valid');
-     $(element).closest('.form-group').addClass("is-valid").removeClass("is-invalid");
-     },
-     rules: {
-     name: {
-     required: true
-     },
-     email: {
-     required: true,
-     email: true
-     },
-     message: {
-     required: true,
-     maxlength: 255
-     
-     }
-     },
-     messages: {
-     name: {
-     required: 'Name* is required field!!!'
-     },
-     email: {
-     required: 'Email* is required field!!!',
-     email: 'Please insert valid Email address!!!'
-     },
-     message: {
-     required: 'Message* is required field!!!',
-     maxlength: 'Max Message length is 255 characters !!!'
-     
-     }
-     
-     },
-     errorElement: 'p',
-     errorPlacement: function (error, element) {
-     error.appendTo($(element).closest('.form-group').find('.invalid-feedback'));
-     }
-     
-     });
-     });
-     }//Form Validation
-     */
+
+    if ($('.contact-form').length > 0) {
+        $(function () {
+            $(".contact-form").validate({
+                highlight: function (element) {
+                    $(element).addClass("is-invalid").removeClass("is-valid");
+                    $(element).closest('.form-group').addClass("is-invalid").removeClass("is-valid");
+                },
+                unhighlight: function (element) {
+                    $(element).removeClass('is-invalid').addClass('is-valid');
+                    $(element).closest('.form-group').addClass("is-valid").removeClass("is-invalid");
+                },
+                rules: {
+                    contact_name: {
+                        required: true
+                    },
+                    contact_email: {
+                        required: true,
+                        email: true
+                    },
+                    contact_message: {
+                        required: true
+                    },
+                    contact_subject: {
+                        required: true
+                    }
+                },
+                errorElement: 'p',
+                errorPlacement: function (error, element) {
+                    error.appendTo($(element).closest('.form-group').find('.invalid-feedback'));
+                }
+
+            });
+        });
+    }//Form Validation
+
 
 });

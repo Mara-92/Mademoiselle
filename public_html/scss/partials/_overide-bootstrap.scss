@@ -26,7 +26,8 @@ $aspect-ratios: (
 "1x1": 100%,
 "4x3": calc(3 / 4 * 100%),
 "16x9": calc(9 / 16 * 100%),
-"21x9": calc(9 / 21 * 100%)
+"21x9": calc(9 / 21 * 100%),
+"3x4": 80.25%,
 );
 $spacer: 1rem;
 $spacers: (
@@ -48,3 +49,7 @@ $navbar-light-icon-color: $primary;
 $navbar-light-hover-color: $secondary;
 $navbar-light-active-color: none;
 $navbar-light-color: $body-color;
+
+$pagination-font-size: 1.6rem;
+$pagination-border-color: none;
+$pagination-color: $body-color;

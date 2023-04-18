@@ -1,0 +1,44 @@
+.blog-news{
+    .blog-news-item{
+        &:hover{
+            .news-item-image{
+                opacity: 0.8;
+            }
+        }
+        .news-item-image{
+            transition: 0.3s linear;
+        }
+         .latest-news-wrapper{
+                    position: relative;
+                    z-index: 22;
+                    margin-top: -88px;
+                    width: 88%;
+                    background-color: #FFFFFF;
+                    padding: 22px 18px 57px 19px;
+                    margin-inline:auto;
+                    p{
+                        font-family: 'Bodoni';
+                        font-size: 1.4rem;
+                        font-style: italic;
+                        line-height: 1.7rem;
+                        letter-spacing: 1px;
+                        color: $body-color;
+                    }
+                    h2{
+                        &:hover{
+                            a{
+                                color: $primary;
+                            }
+                        }
+                        a{
+                            transition: 0.5s linear;
+                            font-size: 1.6rem;
+                            line-height: 2.4rem;
+                            letter-spacing: normal;
+                            color: $body-color;
+                            display: block;
+                        }
+                    }
+                }
+    }
+}

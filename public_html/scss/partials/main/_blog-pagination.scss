@@ -1,0 +1,16 @@
+
+.blog-pagination{
+    padding: 8px 0 25px;
+    .pagination{
+        justify-content: center;
+        .page-item{
+            .page-link{
+                line-height: 2.4rem;
+                font-family: 'Bodoni';
+                span{
+                   font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}

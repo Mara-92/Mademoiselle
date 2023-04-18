@@ -1,0 +1,30 @@
+
+.single-service-header{
+    padding: 0.7rem 0;
+    @media(min-width:992px){
+        padding: 11rem 0 12rem;
+    }
+    @media(min-width:1200px){
+        padding: 17rem 0 18rem;
+    }
+    .single-service-header-item{
+        h2{
+            font-size: 3rem;
+            line-height: 3.8rem;
+            text-transform: uppercase;
+            color: $body-color;
+            margin-bottom: 2.5rem;
+            @media(min-width:992px){
+                font-size: 4rem;
+                line-height: 4.5rem;
+            }
+        }
+        .single-service-header-wrapper{
+            p{
+                font-weight: 300;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+            }
+        }
+    }
+}
